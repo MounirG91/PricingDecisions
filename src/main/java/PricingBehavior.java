@@ -25,9 +25,13 @@ public interface PricingBehavior {
     }
 
     // n>3 : what does n beans cost ?
-    public default double pricingNBeans(int n) {
-        if (n % 3 == 0) return (n / 3) * 1;
-        else return (n / 3) * 1 + (n % 3) * 0.65;
+    public default double pricingManyBeans(int n) {
+        if (n % 3 == 0) {
+            return (n / 3) * 1;
+        }
+        else {
+            return (n / 3) * 1 + (n % 3) * 0.65;
+        }
     }
 
 }

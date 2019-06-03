@@ -1,19 +1,7 @@
 public class Seller extends Person {
 
     public Seller() {
-    }
-
-    public Seller(String firstName, String lastName, String address) {
-        super(firstName, lastName, address);
-    }
-
-    @Override
-    public String toString() {
-        return "Seller{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", address='" + address + '\'' +
-                '}';
+        super();
     }
 
     @Override

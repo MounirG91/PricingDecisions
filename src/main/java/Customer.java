@@ -1,20 +1,9 @@
 public class Customer extends Person {
 
     public Customer() {
+        super();
     }
 
-    public Customer(String firstName, String lastName, String address) {
-        super(firstName, lastName, address);
-    }
-
-    @Override
-    public String toString() {
-        return "Customer{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", address='" + address + '\'' +
-                '}';
-    }
 
     @Override
     public void displayOfPricingBeans(int numberOfBeans) {

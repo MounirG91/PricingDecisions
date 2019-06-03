@@ -36,6 +36,6 @@ public class PricingBehaviorTest {
 
     @Test
     public void pricingNBeans() {
-        Assert.assertEquals(pricingBehavior.pricingNBeans(5), 1 + 0.65 + 0.65, 0.001);
+        Assert.assertEquals(pricingBehavior.pricingManyBeans(5), 1 + 0.65 + 0.65, 0.001);
     }
 }
